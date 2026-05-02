@@ -5,31 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#030303">
     
-    <!-- SEO e Identidade Mundial -->
     <title>POMBAGIRAS.COM | Conhecimento Sagrado & Arte Visceral</title>
-    <meta name="description" content="O olho que tudo vê nas encruzilhadas do mundo. Desmistificando o feminino proibido através da tecnologia e da ancestralidade. Alexia Melusine revela o que as sombras escondem. Laroyê.">
     
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/pombagiras/melusine/main/Al%C3%AA%20(3)%20(3)%20(1).png">
-
-    <!-- Open Graph / Redes Sociais -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pombagiras.com/">
-    <meta property="og:title" content="POMBAGIRAS.COM | Conhecimento Sagrado & Arte Visceral">
-    <meta property="og:description" content="O olho que tudo vê nas encruzilhadas do mundo. Desmistificando o feminino proibido através da tecnologia e da ancestralidade. Alexia Melusine revela o que as sombras escondem. Laroyê.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Ale%20Ultra%20(1).png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://pombagiras.com/">
-    <meta name="twitter:title" content="POMBAGIRAS.COM | Conhecimento Sagrado & Arte Visceral">
-    <meta name="twitter:description" content="O olho que tudo vê nas encruzilhadas do mundo. Desmistificando o feminino proibido através da tecnologia e da ancestralidade. Laroyê.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Ale%20Ultra%20(1).png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
         :root {
@@ -40,11 +21,7 @@
             --text-gray: #d1d1d1;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
 
         body {
             background-color: var(--black);
@@ -54,257 +31,81 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, .latin-phrase {
+        h1, h2, h3, h4, .latin-phrase {
             font-family: 'Cinzel', serif;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* Hero Section */
+        /* Hero & Nav */
         header {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(45, 10, 49, 0.5)), url('https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Cavpa%20(4).jpeg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-bottom: 3px solid var(--blood-red);
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(45, 10, 49, 0.6)), url('https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Cavpa%20(4).jpeg');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; border-bottom: 3px solid var(--blood-red);
         }
 
-        header h1 {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            color: white;
-            text-shadow: 0 0 20px var(--blood-red);
-            margin-bottom: 10px;
-        }
-
-        .latin-sub {
-            font-size: 1.2rem;
-            color: var(--blood-red);
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-
-        /* Navigation */
         nav {
-            position: sticky;
-            top: 0;
-            background: rgba(3, 3, 3, 0.95);
-            padding: 15px 0;
-            z-index: 1000;
-            border-bottom: 1px solid var(--dark-purple);
+            position: sticky; top: 0; background: rgba(3, 3, 3, 0.95);
+            padding: 15px 0; z-index: 1000; border-bottom: 1px solid var(--dark-purple);
         }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            flex-wrap: wrap;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: var(--blood-red);
-        }
-
-        /* Sections */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            position: relative;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--blood-red);
-            margin-bottom: 10px;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--dark-purple);
-            margin: 0 auto;
-        }
-
-        /* Alexia Section */
-        .alexia-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .alexia-img {
-            width: 100%;
-            border: 5px solid var(--dark-purple);
-            box-shadow: 0 0 30px rgba(139, 0, 0, 0.3);
-            border-radius: 5px;
-        }
-
-        .alexia-content blockquote {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-style: italic;
-            color: white;
-            border-left: 4px solid var(--blood-red);
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
+        nav ul { display: flex; justify-content: center; list-style: none; flex-wrap: wrap; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 600; font-size: 0.8rem; transition: 0.3s; }
+        nav ul li a:hover { color: var(--blood-red); }
 
         /* Cards Grid */
+        section { padding: 60px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.5rem; color: var(--blood-red); margin-bottom: 10px; }
+        
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: #0a0a0a;
-            border: 1px solid #222;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(139, 0, 0, 0.2);
-            border-color: var(--blood-red);
-        }
-
-        .card-img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            filter: grayscale(30%);
-            transition: filter 0.3s;
-        }
-
-        .card:hover .card-img {
-            filter: grayscale(0%);
-        }
-
-        .card-info {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .card-info h3 {
-            font-size: 1.1rem;
-            color: white;
-            margin-bottom: 5px;
-        }
-
-        .card-info p {
-            font-size: 0.85rem;
-            color: var(--blood-red);
-        }
-
-        /* Glossary */
-        .glossary-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 20px;
         }
 
-        .glossary-item {
-            background: #0d0d0d;
-            padding: 20px;
-            border-left: 3px solid var(--dark-purple);
+        .card {
+            background: #0a0a0a; border: 1px solid #222; border-radius: 4px;
+            overflow: hidden; cursor: pointer; transition: 0.4s; position: relative;
         }
+        .card:hover { border-color: var(--blood-red); transform: translateY(-5px); box-shadow: 0 0 15px rgba(139, 0, 0, 0.3); }
+        .card-img { width: 100%; height: 300px; object-fit: cover; filter: grayscale(50%); transition: 0.3s; }
+        .card:hover .card-img { filter: grayscale(0%); }
+        .card-info { padding: 10px; text-align: center; background: rgba(0,0,0,0.8); }
+        .card-info h3 { font-size: 0.9rem; color: white; }
 
-        .glossary-item h4 {
-            color: var(--blood-red);
-            margin-bottom: 10px;
-            font-family: 'Cinzel', serif;
+        /* Modal */
+        .modal {
+            display: none; position: fixed; z-index: 2000; top: 0; left: 0;
+            width: 100%; height: 100%; background: rgba(0,0,0,0.98);
+            overflow-y: auto; padding: 20px;
         }
-
-        /* FAQ */
-        .faq-item {
-            margin-bottom: 20px;
-            background: #0a0a0a;
-            padding: 25px;
-            border: 1px solid #1a1a1a;
+        .modal-content {
+            background: #0d0d0d; max-width: 900px; margin: 40px auto;
+            border: 1px solid var(--blood-red); display: grid; 
+            grid-template-columns: 1fr 1fr; gap: 30px; padding: 40px; position: relative;
         }
+        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 35px; color: white; cursor: pointer; }
+        .modal-img { width: 100%; border: 1px solid #333; }
+        .info-box h3 { color: var(--gold); font-size: 2rem; margin-bottom: 10px; border-bottom: 1px solid var(--blood-red); }
+        .info-box ul { list-style: none; margin-top: 20px; }
+        .info-box li { margin-bottom: 15px; font-size: 0.95rem; line-height: 1.4; }
+        .info-box b { color: var(--blood-red); display: block; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; }
 
-        .faq-item h4 {
-            color: white;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
+        /* Glossário Estilizado */
+        .glossary-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .glossary-card { background: #080808; padding: 20px; border-left: 2px solid var(--blood-red); transition: 0.3s; }
+        .glossary-card:hover { background: #121212; border-left-width: 5px; }
+        .glossary-card h4 { color: var(--gold); margin-bottom: 8px; font-size: 1rem; }
+        .glossary-card p { font-size: 0.85rem; color: #aaa; }
+        .category-title { color: var(--blood-red); margin: 40px 0 20px; border-bottom: 1px solid #222; padding-bottom: 10px; width: 100%; }
 
-        /* Footer */
-        footer {
-            background: #000;
-            padding: 60px 0 20px;
-            text-align: center;
-            border-top: 2px solid var(--dark-purple);
-        }
-
-        .social-links {
-            margin-bottom: 30px;
-        }
-
-        .btn-contact {
-            display: inline-block;
-            padding: 12px 30px;
-            background: var(--blood-red);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            margin: 10px;
-            transition: opacity 0.3s;
-        }
-
-        .btn-contact:hover {
-            opacity: 0.8;
-        }
-
-        .latin-footer {
-            color: #444;
-            font-size: 0.8rem;
-            margin-top: 40px;
-        }
-
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
-            .alexia-grid {
-                grid-template-columns: 1fr;
-            }
-            header h1 {
-                font-size: 3rem;
-            }
-            nav ul li {
-                margin: 5px 10px;
-            }
+            .modal-content { grid-template-columns: 1fr; padding: 20px; }
         }
     </style>
 </head>
@@ -312,293 +113,185 @@
 
     <header>
         <div class="container">
-            <p class="latin-sub">Lux in Tenebris, Vis in Cruce</p>
+            <p class="latin-sub">Lux in Tenebris</p>
             <h1>POMBAGIRAS.COM</h1>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Ancestralidade, Poder Feminino e Mistérios das Encruzilhadas Digitais.</p>
+            <p style="max-width: 600px; margin: 20px auto;">
+Educational Portal: Demystifying the forbidden feminine through technology and ancestry.</p>
         </div>
     </header>
 
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">ALEXIA MELUSINE</a></li>
-                <li><a href="#pombagiras">AS ENTIDADES</a></li>
-                <li><a href="#glossary">CONCEITOS</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">CONTATO</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#pombagiras">AS 24 FALANGES</a></li>
+            <li><a href="#glossary">GLOSSÁRIO SAGRADO</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">CONEXÕES</a></li>
+        </ul>
     </nav>
 
-    <!-- Alexia Melusine Section -->
-    <section id="about">
+    <!-- Seção das Entidades -->
+    <section id="pombagiras">
         <div class="container">
             <div class="section-title">
-                <p class="latin-phrase" style="color: #555; font-size: 0.8rem;">Animus in Igne, Lux in Ferro</p>
-                <h2>ALEXIA MELUSINE</h2>
-            </div>
-            <div class="alexia-grid">
-                <div>
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine-oficial/refs/heads/main/Ale%20Ultra%20(1).png" alt="Alexia Melusine" class="alexia-img">
-                </div>
-                <div class="alexia-content">
-                    <blockquote>
-                        "Almas em Fogo, Luz em Ferro"
-                    </blockquote>
-                    <p style="color: white; margin-bottom: 20px;">
-                        I am Alexia Melusine, a fluid soul transiting between worlds, carrying the ancestral strength of the Pombagiras and the transformative light of trans identity.
-                    </p>
-                    <p>
-                        Meu trabalho une espiritualidade, arte, tecnologia e ativismo. Crio portais digitais que conectam pessoas à sabedoria das encruzilhadas, à beleza da não-conformidade e ao poder da autenticidade.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pombagiras Section -->
-    <section id="pombagiras" style="background: #050505;">
-        <div class="container">
-            <div class="section-title">
-                <p class="latin-phrase" style="color: #555; font-size: 0.8rem;">Mulieres Potentes de Tenebris</p>
                 <h2>AS 24 FALANGES</h2>
-                <p>Conheça as regentes das encruzilhadas, almas e caminhos.</p>
+                <p>Toque na imagem para expandir os fundamentos de cada entidade.</p>
             </div>
 
-            <h3 style="color: var(--gold); margin: 40px 0 20px; text-align: center;">As 12 Mais Conhecidas</h3>
-            <div class="cards-grid">
-                <!-- 12 Conhecidas -->
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/maria_padilha_1.png" class="card-img" alt="Maria Padilha">
-                    <div class="card-info"><h3>Maria Padilha</h3><p>Comando & Realeza</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/maria_mulambo_1%20(1).png" class="card-img" alt="Maria Mulambo">
-                    <div class="card-info"><h3>Maria Mulambo</h3><p>Cura & Humildade</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/maria_quiteria_1.png" class="card-img" alt="Maria Quitéria">
-                    <div class="card-info"><h3>Maria Quitéria</h3><p>Guerra & Proteção</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/rosa_caveira_1.png" class="card-img" alt="Rosa Caveira">
-                    <div class="card-info"><h3>Rosa Caveira</h3><p>Justiça & Morte</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/dama_da_noite_1.png" class="card-img" alt="Dama da Noite">
-                    <div class="card-info"><h3>Dama da Noite</h3><p>Mistério & Oculto</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/sete_saias_1.png" class="card-img" alt="Sete Saias">
-                    <div class="card-info"><h3>Sete Saias</h3><p>Alegria & Intensidade</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/cigana_1.png" class="card-img" alt="Cigana">
-                    <div class="card-info"><h3>Cigana</h3><p>Liberdade & Prosperidade</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/maria_navalha_1.png" class="card-img" alt="Maria Navalha">
-                    <div class="card-info"><h3>Maria Navalha</h3><p>Malandragem & Rua</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_praia_1.png" class="card-img" alt="Pombagira da Praia">
-                    <div class="card-info"><h3>Pombagira da Praia</h3><p>Emoção & Limpeza</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/maria_farrapo_1.png" class="card-img" alt="Maria Farrapo">
-                    <div class="card-info"><h3>Maria Farrapo</h3><p>Sanidade & Caos</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/menina_1.png" class="card-img" alt="Pombagira Menina">
-                    <div class="card-info"><h3>Pombagira Menina</h3><p>Renovação & Inocência</p></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_figueira_1.png" class="card-img" alt="Pombagira da Figueira">
-                    <div class="card-info"><h3>Pombagira da Figueira</h3><p>Raiz & Ancestralidade</p></div>
-                </div>
-            </div>
-
-            <h3 style="color: var(--gold); margin: 60px 0 20px; text-align: center;">8 Pombagiras Raras</h3>
-            <div class="cards-grid">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/das_almas_1.png" class="card-img" alt="Das Almas">
-                    <div class="card-info"><h3>Pombagira das Almas</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/sete_encruzilhadas_1.png" class="card-img" alt="Sete Encruzilhadas">
-                    <div class="card-info"><h3>Sete Encruzilhadas</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_lua_1.png" class="card-img" alt="Da Lua">
-                    <div class="card-info"><h3>Pombagira da Lua</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/das_trevas_1.png" class="card-img" alt="Das Trevas">
-                    <div class="card-info"><h3>Pombagira das Trevas</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_serra_1.png" class="card-img" alt="Da Serra">
-                    <div class="card-info"><h3>Pombagira da Serra</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/do_fogo_1.png" class="card-img" alt="Do Fogo">
-                    <div class="card-info"><h3>Pombagira do Fogo</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/das_aguas_profundas_1.png" class="card-img" alt="Águas Profundas">
-                    <div class="card-info"><h3>Águas Profundas</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_sombra_1.png" class="card-img" alt="Da Sombra">
-                    <div class="card-info"><h3>Pombagira da Sombra</h3></div>
-                </div>
-            </div>
-
-            <h3 style="color: var(--gold); margin: 60px 0 20px; text-align: center;">4 Pombagiras Raríssimas</h3>
-            <div class="cards-grid">
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_fenda_1.png" class="card-img" alt="Da Fenda">
-                    <div class="card-info"><h3>Pombagira da Fenda</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_calunga_profunda_1.png" class="card-img" alt="Calunga Profunda">
-                    <div class="card-info"><h3>Calunga Profunda</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/das_correntes_1.png" class="card-img" alt="Das Correntes">
-                    <div class="card-info"><h3>Pombagira das Correntes</h3></div>
-                </div>
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/da_neblina_1.png" class="card-img" alt="Da Neblina">
-                    <div class="card-info"><h3>Pombagira da Neblina</h3></div>
-                </div>
+            <div class="cards-grid" id="grid-entidades">
+                <!-- Gerado via JS para manter o código limpo -->
             </div>
         </div>
     </section>
 
-    <!-- Warning Section -->
-    <section style="background: var(--blood-red); color: white; text-align: center; padding: 60px 0;">
-        <div class="container">
-            <h2 style="font-family: 'Cinzel', serif; margin-bottom: 20px;">SEM ILUSÃO</h2>
-            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; font-weight: bold;">
-                Pombagira não é fantasia estética de internet. Não é símbolo vazio. Não é personagem sensual para consumo. 
-                É linha de trabalho. É estrutura espiritual. É força operante com função definida.
-            </p>
-            <p style="margin-top: 20px; font-style: italic;">
-                "Respeito não é opcional — é condição mínima."
-            </p>
-        </div>
-    </section>
-
-    <!-- Glossary Section -->
-    <section id="glossary">
+    <!-- Glossário Completo -->
+    <section id="glossary" style="background: #050505;">
         <div class="container">
             <div class="section-title">
-                <p class="latin-phrase" style="color: #555; font-size: 0.8rem;">Scientia Potentia Est</p>
-                <h2>CONCEITOS E ENTIDADES</h2>
+                <h2>📖 Glossário Sagrado</h2>
+                <p>Conheça os termos e a fundamentação das tradições.</p>
             </div>
-            
-            <div class="glossary-list">
-                <div class="glossary-item"><h4>Axé</h4><p>Força vital, energia sagrada que permeia tudo. É o poder espiritual que mantém o equilíbrio do universo.</p></div>
-                <div class="glossary-item"><h4>Orixá</h4><p>Divindades que representam forças da natureza e aspectos humanos (Ogum, Iemanjá, Oxalá).</p></div>
-                <div class="glossary-item"><h4>Médium</h4><p>Indivíduo que serve de ponte entre o plano físico e espiritual.</p></div>
-                <div class="glossary-item"><h4>Entidade/Guia</h4><p>Espírito que se manifesta para auxiliar pessoas (Pretos-Velhos, Caboclos, Exus, Pombagiras).</p></div>
-                <div class="glossary-item"><h4>Olorum/Zambi</h4><p>Deus Supremo, criador de tudo, energia pura e absoluta.</p></div>
-                <div class="glossary-item"><h4>Egregora</h4><p>Campo energético coletivo formado por pensamentos e crenças de um grupo.</p></div>
-                <div class="glossary-item"><h4>Ponto Riscado</h4><p>Desenho feito com pemba para invocar ou firmar entidades.</p></div>
-                <div class="glossary-item"><h4>Marafo</h4><p>Aguardente usada ritualisticamente por Exus e Pombagiras.</p></div>
-                <div class="glossary-item"><h4>Tronqueira</h4><p>Local físico ou energético onde Exus e Pombagiras atuam.</p></div>
-                <div class="glossary-item"><h4>Saravá</h4><p>Saudação geral, sinônimo de "salve" ou "axé".</p></div>
-                <div class="glossary-item"><h4>Mandinga</h4><p>Feitiço, encantamento ou trabalho espiritual.</p></div>
-                <div class="glossary-item"><h4>Mironga</h4><p>Segredo, mistério, conhecimento oculto ou poder mágico.</p></div>
+
+            <h3 class="category-title">🗝️ Conceitos e Entidades</h3>
+            <div class="glossary-container">
+                <div class="glossary-card"><h4>Axé</h4><p>Força vital, energia sagrada que permeia tudo.</p></div>
+                <div class="glossary-card"><h4>Orixá</h4><p>Divindades que representam forças da natureza (Ogum, Iemanjá, Oxalá).</p></div>
+                <div class="glossary-card"><h4>Médium</h4><p>Indivíduo que serve de ponte entre o plano físico e espiritual.</p></div>
+                <div class="glossary-card"><h4>Entidade/Guia</h4><p>Espírito que se manifesta para auxiliar pessoas (Pretos-Velhos, Pombagiras).</p></div>
+                <div class="glossary-card"><h4>Olorum/Zambi</h4><p>Deus Supremo, criador de tudo, energia pura e absoluta.</p></div>
+                <div class="glossary-card"><h4>Egregora</h4><p>Campo energético coletivo formado por pensamentos e crenças.</p></div>
+                <div class="glossary-card"><h4>Exu Mirim</h4><p>Entidades infantis da linha de esquerda, atuam na desobstrução rápida.</p></div>
+                <div class="glossary-card"><h4>Ibejada</h4><p>Linha das crianças (Ibejis), trabalha com pureza e renovação.</p></div>
+            </div>
+
+            <h3 class="category-title">🕯️ Rituais e Objetos</h3>
+            <div class="glossary-container">
+                <div class="glossary-card"><h4>Ponto Riscado</h4><p>Desenho sagrado feito com pemba para firmar energias.</p></div>
+                <div class="glossary-card"><h4>Pemba</h4><p>Giz sagrado usado para riscar fundamentos rituais.</p></div>
+                <div class="glossary-card"><h4>Atabaque</h4><p>Tambor sagrado que marca o ritmo e chama as entidades.</p></div>
+                <div class="glossary-card"><h4>Curimba</h4><p>A vibração musical e coral que sustenta a gira.</p></div>
+                <div class="glossary-card"><h4>Marafo</h4><p>Aguardente usada ritualisticamente em oferendas e limpezas.</p></div>
+                <div class="glossary-card"><h4>Pito</h4><p>Cigarro ou cachimbo usado para limpeza etérea e sabedoria.</p></div>
+                <div class="glossary-card"><h4>Tronqueira</h4><p>Ponto de proteção onde Exus e Pombagiras guardam a entrada.</p></div>
+                <div class="glossary-card"><h4>Peji/Congá</h4><p>Altar central, ponto focal das energias do terreiro.</p></div>
+            </div>
+
+            <h3 class="category-title">🌀 Termos Diversos</h3>
+            <div class="glossary-container">
+                <div class="glossary-card"><h4>Saravá</h4><p>Saudação de respeito. "Salve a sua força".</p></div>
+                <div class="glossary-card"><h4>Agô</h4><p>Pedido de licença, permissão ou perdão espiritual.</p></div>
+                <div class="glossary-card"><h4>Maleme</h4><p>Pedido de auxílio, clemência ou reconhecimento de erro.</p></div>
+                <div class="glossary-card"><h4>Passe</h4><p>Transmissão de energia para limpeza do campo magnético.</p></div>
+                <div class="glossary-card"><h4>Defumação</h4><p>Uso de ervas e fumaça para purificar ambientes e pessoas.</p></div>
+                <div class="glossary-card"><h4>Gira/Sessão</h4><p>O trabalho espiritual coletivo dentro do terreiro.</p></div>
+                <div class="glossary-card"><h4>Mandinga</h4><p>Encantamento, feitiço ou trabalho de proteção/ataque.</p></div>
+                <div class="glossary-card"><h4>Mironga</h4><p>O segredo, o mistério oculto por trás do ritual.</p></div>
+                <div class="glossary-card"><h4>Atatuado</h4><p>Estado de influência espiritual direta.</p></div>
+                <div class="glossary-card"><h4>Ere</h4><p>Transe infantil ou estado de consciência intermediário.</p></div>
+                <div class="glossary-card"><h4>Pade</h4><p>Oferenda alimentar específica para Exu ou Pombagira.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" style="background: #050505;">
-        <div class="container">
-            <div class="section-title">
-                <p class="latin-phrase" style="color: #555; font-size: 0.8rem;">Interrogatio et Responsio</p>
-                <h2>PERGUNTAS FREQUENTES</h2>
-            </div>
-
-            <div class="faq-item">
-                <h4>Pomba-gira é um demônio ou entidade maligna?</h4>
-                <p>Não. É uma entidade espiritual evoluída que trabalha para o bem, atuando em questões como justiça, amor e fortalecimento pessoal. O conceito de demônio é alheio às tradições afro-brasileiras.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Qualquer pessoa pode receber uma Pomba-gira?</h4>
-                <p>Não. A incorporação exige mediunidade específica e desenvolvimento dentro de um terreiro sob orientação espiritual.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Por que são associadas a rosas, champagne e espelhos?</h4>
-                <p>Rosas simbolizam amor; Champagne representa celebração e elevação; Espelhos refletem a verdade e o auto-conhecimento.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Pomba-gira "castiga" ou "pune" pessoas?</h4>
-                <p>Elas trabalham com a lei de causa e efeito (karma). Não castigam por capricho, mas reequilibram situações de injustiça.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Qual a relação com a comunidade LGBTQIA+?</h4>
-                <p>As Pombagiras representam a quebra de tabus e a liberdade de ser, tornando-se símbolos de resistência e acolhimento espiritual.</p>
+    <!-- Modal de Expansão -->
+    <div id="pombaModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" class="modal-img">
+            <div class="info-box">
+                <h3 id="modalName">NOME</h3>
+                <p id="modalSub" style="color: var(--blood-red); font-weight: bold; margin-bottom: 15px;"></p>
+                <ul>
+                    <li><b>Dia de Regência:</b> <span id="modalDia"></span></li>
+                    <li><b>Cores Sagradas:</b> <span id="modalCores"></span></li>
+                    <li><b>Oferenda Ritual:</b> <span id="modalOferenda"></span></li>
+                    <li><b>Influência Lunar:</b> <span id="modalLua"></span></li>
+                    <li><b>Advertência/Mironga:</b> <span id="modalAdv"></span></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
 
-     <!-- Social / Contact -->
-    <section id="contact">
-        <div class="container" style="text-align: center;">
-            <div class="section-title">
-                <h2>CONEXÕES DIGITAIS</h2>
-                <p>Onde as sombras e a luz se encontram.</p>
-            </div>
-            
-            <div class="social-minimalist">
-                <a href="https://www.instagram.com/almasdepombagira/" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@almasdepombagira" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/@almasdepombagira" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://open.spotify.com/show/0oeCL1QScD3v7dHeUvJjgJ" class="social-icon" title="Spotify"><i class="fab fa-spotify"></i></a>
-                <a href="https://github.com/pombagiras" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.behance.net/alexiamelusine" class="social-icon" title="Behance"><i class="fab fa-behance"></i></a>
-                <a href="https://bio.site/AlmasdePombagira" class="social-icon" title="Bio Site"><i class="fas fa-link"></i></a>
-                <a href="https://substack.com/@alexiamelusine" class="social-icon" title="Substack"><i class="fas fa-envelope-open-text"></i></a>
-                <a href="https://www.threads.com/@almasdepombagira" class="social-icon" title="Threads"><i class="fab fa-at"></i></a>
-            </div>
-
-
-    <footer>
+    <!-- Footer -->
+    <footer id="contact">
         <div class="container">
-            <img src="https://raw.githubusercontent.com/pombagiras/melusine/main/Al%C3%AA%20(3)%20(3)%20(1).png" alt="Logo" style="width: 50px; margin-bottom: 20px;">
-            <p>&copy; 2024 POMBAGIRAS.COM - Alexia Melusine</p>
-            <p class="latin-footer">Veni, Vidi, Vici | Laroyê Exu, Saravá Pombagira</p>
+            <h2 style="color: var(--blood-red); margin-bottom: 20px;">POMBAGIRAS.COM</h2>
+            <div style="margin: 20px 0;">
+                <a href="https://www.instagram.com/almasdepombagira/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@almasdepombagira" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="mailto:alexiamelusine7@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 - ALEXIA MELUSINE. TODOS OS DIREITOS RESERVADOS.</p>
+            <p class="latin-phrase" style="font-size: 0.6rem; margin-top: 10px;">Laroyê Exu | Saravá Pombagira</p>
         </div>
     </footer>
 
-<div style="margin-top: 50px;">
-                <p style="font-size: 0.8rem; color: #444;">CONTACT DIRECTLY</p>
-                <a href="mailto:alexiamelusine7@gmail.com" class="footer-email">alexiamelusine7@gmail.com</a>
-            </div>
-        </div>
-    </section>
+    <script>
+        // Banco de Dados das 24 Pombagiras
+        const pombagiras = [
+            { n: "Maria Padilha", s: "Rainha das Encruzilhadas", i: "maria_padilha_1.png", d: "Segunda-feira", c: "Vermelho e Preto", o: "Champagne, Rosas, Cigarrilha", l: "Cheia", a: "Não aceita traição ou falta de palavra." },
+            { n: "Maria Mulambo", s: "Cura e Transmutação", i: "maria_mulambo_1%20(1).png", d: "Sexta-feira", c: "Dourado, Preto e Roxo", o: "Bebidas doces, Farofa, Velas", l: "Minguante", a: "Exige humildade extrema no pedido." },
+            { n: "Maria Quitéria", s: "Guerra e Proteção", i: "maria_quiteria_1.png", d: "Terça-feira", c: "Preto, Vermelho e Amarelo", o: "Vinho tinto, Punhal ritual", l: "Crescente", a: "Energia de corte rápido. Seja direto." },
+            { n: "Rosa Caveira", s: "Justiça e Morte", i: "rosa_caveira_1.png", d: "Segunda-feira", c: "Amarelo, Preto e Branco", o: "Cachaça, Rosas Amarelas", l: "Nova", a: "Lida com a verdade nua e crua." },
+            { n: "Dama da Noite", s: "Mistério e Oculto", i: "dama_da_noite_1.png", d: "Sábado", c: "Dourado e Preto", o: "Perfumes finos, Licor de anis", l: "Cheia", a: "Atua nas sombras para trazer luz." },
+            { n: "Sete Saias", s: "Alegria e Movimento", i: "sete_saias_1.png", d: "Quarta-feira", c: "Sete cores ou Vermelho", o: "Champagne rosé, pulseiras", l: "Crescente", a: "Trabalha o magnetismo pessoal." },
+            { n: "Cigana", s: "Liberdade e Destino", i: "cigana_1.png", d: "Sexta-feira", c: "Cores vibrantes", o: "Frutas, moedas, incensos", l: "Cheia", a: "Cuidado com o que deseja, ela abre caminhos." },
+            { n: "Maria Navalha", s: "Malandragem e Rua", i: "maria_navalha_1.png", d: "Sábado", c: "Vermelho, Branco e Preto", o: "Cerveja branca, cigarro", l: "Minguante", a: "Fidelidade e malandragem andam juntas." },
+            { n: "Pombagira da Praia", s: "Emoção e Limpeza", i: "da_praia_1.png", d: "Sábado", c: "Azul escuro e Prata", o: "Bebida na beira-mar, espelhos", l: "Minguante", a: "Limpa mágoas profundas." },
+            { n: "Maria Farrapo", s: "Sanidade e Caos", i: "maria_farrapo_1.png", d: "Segunda-feira", c: "Preto e Vermelho (trapos)", o: "Cachaça, fumo de rolo", l: "Nova", a: "Recolhe o que ninguém quer." },
+            { n: "Pombagira Menina", s: "Renovação", i: "menina_1.png", d: "Domingo", c: "Rosa e Vermelho", o: "Doces finos, sidra", l: "Crescente", a: "Energia jovem e impetuosa." },
+            { n: "Pombagira da Figueira", s: "Raiz e Ancestralidade", i: "da_figueira_1.png", d: "Quinta-feira", c: "Verde escuro e Preto", o: "Velas sob a árvore, mel", l: "Nova", a: "Conexão com a terra e o passado." },
+            { n: "Das Almas", s: "Trânsito Espiritual", i: "das_almas_1.png", d: "Segunda-feira", c: "Branco e Preto", o: "Velas brancas, água e sal", l: "Minguante", a: "Guardiã do cemitério e dos portais." },
+            { n: "Sete Encruzilhadas", s: "Destino Cruzado", i: "sete_encruzilhadas_1.png", d: "Terça-feira", c: "Vermelho e Preto", o: "Padê completo nas cruzes", l: "Nova", a: "Domina todos os rumos." },
+            { n: "Da Lua", s: "Intuição e Magia", i: "da_lua_1.png", d: "Segunda-feira", c: "Prata e Branco", o: "Leite, flores brancas", l: "Cheia", a: "Trabalha a psique humana." },
+            { n: "Das Trevas", s: "Inconsciente Profundo", i: "das_trevas_1.png", d: "Segunda-feira", c: "Total Preto", o: "Oferendas silenciosas", l: "Nova", a: "Resgate de almas perdidas no abismo." },
+            { n: "Da Serra", s: "Caminhos Tortuosos", i: "da_serra_1.png", d: "Quinta-feira", c: "Marrom e Preto", o: "Pedras, ervas fortes", l: "Crescente", a: "Força da natureza bruta." },
+            { n: "Do Fogo", s: "Transmutação Ativa", i: "do_fogo_1.png", d: "Terça-feira", c: "Laranja e Vermelho", o: "Pimenta, bebidas fortes", l: "Crescente", a: "Queima energias densas instantaneamente." },
+            { n: "Águas Profundas", s: "Subconsciente", i: "das_aguas_profundas_1.png", d: "Sexta-feira", c: "Preto e Azul", o: "Objetos de prata jogados ao mar", l: "Minguante", a: "Lida com segredos que ninguém revela." },
+            { n: "Da Sombra", s: "Ocultação", i: "da_sombra_1.png", d: "Sábado", c: "Cinza e Preto", o: "Velas pretas, incenso de mirra", l: "Minguante", a: "Protege contra ataques invisíveis." },
+            { n: "Da Fenda", s: "Entre-mundos", i: "da_fenda_1.png", d: "Segunda-feira", c: "Roxo e Preto", o: "Velas bicolor em fendas de rocha", l: "Nova", a: "Atua em portais dimensionais raros." },
+            { n: "Calunga Profunda", s: "Mistério Final", i: "da_calunga_profunda_1.png", d: "Segunda-feira", c: "Preto e Ouro Velho", o: "Terra de cemitério, vinho", l: "Minguante", a: "Raríssima. Guardiã do fim dos tempos." },
+            { n: "Das Correntes", s: "Quebra de Prisões", i: "das_correntes_1.png", d: "Quarta-feira", c: "Cinza Metálico", o: "Elos de ferro, velas", l: "Crescente", a: "Liberta de vícios e amarras espirituais." },
+            { n: "Da Neblina", s: "Confusão e Proteção", i: "da_neblina_1.png", d: "Sábado", c: "Branco Fosco e Cinza", o: "Fumaça de ervas, bebidas claras", l: "Nova", a: "Torna o devoto invisível aos inimigos." }
+        ];
 
-    <footer>
-        <div class="container">
-            <img src="https://raw.githubusercontent.com/pombagiras/melusine/main/Al%C3%AA%20(3)%20(3)%20(1).png" class="footer-logo" alt="Logo">
-            <p class="copyright">ALL RIGHTS RESERVED &copy; 2026 - 2029 | POMBAGIRAS.COM</p>
-            <p style="font-size: 0.7rem; color: #333; letter-spacing: 2px;">LAROYÊ EXU | SARAVÁ POMBAGIRA</p>
-            <p style="font-size: 0.6rem; color: #222; margin-top: 10px;">@almasdepombagira</p>
-        </div>
-    </footer>
-        // Smooth Scroll
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        const grid = document.getElementById('grid-entidades');
+        const baseUrl = "https://raw.githubusercontent.com/pombagiras/melusine/refs/heads/main/";
+
+        // Renderizar Cards
+        pombagiras.forEach((p, index) => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.onclick = () => openPomba(index);
+            card.innerHTML = `
+                <img src="${baseUrl}${p.i}" class="card-img" alt="${p.n}">
+                <div class="card-info"><h3>${p.n}</h3></div>
+            `;
+            grid.appendChild(card);
         });
+
+        function openPomba(index) {
+            const p = pombagiras[index];
+            document.getElementById('modalName').innerText = p.n;
+            document.getElementById('modalSub').innerText = p.s;
+            document.getElementById('modalImg').src = baseUrl + p.i;
+            document.getElementById('modalDia').innerText = p.d;
+            document.getElementById('modalCores').innerText = p.c;
+            document.getElementById('modalOferenda').innerText = p.o;
+            document.getElementById('modalLua').innerText = p.l;
+            document.getElementById('modalAdv').innerText = p.a;
+            
+            document.getElementById('pombaModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('pombaModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(e) {
+            if (e.target == document.getElementById('pombaModal')) closeModal();
+        }
     </script>
 </body>
 </html>
