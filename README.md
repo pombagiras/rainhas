@@ -33,22 +33,6 @@ O portal foi construído para ser mais do que um site; é um portal de impacto q
 ├── Assets/             # Imagens e ícones viscerais
 └── README.md           # Este guia de imersão
 
-🔗 Conexões Digitais
-Onde as sombras e a luz se encontram em todas as plataformas:
-
-🌐 Portal Principal
-
-🔗 Bio Site
-
-🎨 Behance
-
-🎙️ Spotify (Limbo Sonoro)
-
-🎥 Kwai - Alexia Rosa de Fogo
-
-🖋️ Substack
-
-🧵 Threads
 
 📜 Licença e Propriedade
 TODOS OS DIREITOS RESERVADOS © 2026-2029 | ALEXIA MELUSINE.
